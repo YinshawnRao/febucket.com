@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Layout, Menu } from 'antd';
+import http from 'axios';
 
 const { Header, Content, Footer } = Layout;
 
 function App() {
+
+    http.get('/article/test').then(res => {
+        console.log(res)
+    })
+
     return (
         <Layout className="layout">
             <Header>
