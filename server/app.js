@@ -3,6 +3,8 @@ const articleRouter = require('./routes/article')
 
 const app = express()
 
+app.use(express.static('dist'))
+
 app.get('/article/:title', articleRouter)
 
 app.listen(3030, () => {

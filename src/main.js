@@ -18,7 +18,9 @@ function App() {
             <Content style={{ padding: '0 50px' }}>
                 <div className="site-layout-content">Content</div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+            <Footer style={{ textAlign: 'center' }}>                
+                <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备19151854号</a>
+            </Footer>
         </Layout>
     );
 }
